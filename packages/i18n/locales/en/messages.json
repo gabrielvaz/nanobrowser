@@ -1,11 +1,11 @@
 {
   "app_metadata_description": {
     "description": "Extension description",
-    "message": "Automate web tasks with AI! NanoBrowser is an open-source browser extension that lets you extract data, fill forms, and more."
+    "message": "AI assistant for cardiologists: interpret ECGs, review reports, and support clinical decisions. Built on intelligent web automation technology."
   },
   "app_metadata_name": {
     "description": "Extension name",
-    "message": "Nanobrowser: AI Web Agent & Automation"
+    "message": "CardioBrain: AI Assistant for Cardiology"
   },
   "errors_unknown": {
     "message": "Unknown error occurred"
@@ -38,7 +38,7 @@
     "message": "Back to chat"
   },
   "welcome_title": {
-    "message": "Welcome to Nanobrowser!"
+    "message": "Welcome to CardioBrain!"
   },
   "welcome_instruction": {
     "message": "To get started, please configure your API keys in the settings page."
@@ -167,7 +167,7 @@
     "message": "Enable Voice Input"
   },
   "permissions_microphone_description": {
-    "message": "Nanobrowser needs microphone access to convert your speech to text."
+    "message": "CardioBrain needs microphone access to convert your speech to text."
   },
   "permissions_microphone_grantButton": {
     "message": "Grant Microphone Permission"
@@ -967,5 +967,74 @@
         "example": "Option not found"
       }
     }
+  },
+  "clinical_disclaimer_title": {
+    "message": "⚕️ Clinical Use Disclaimer"
+  },
+  "clinical_disclaimer_text": {
+    "message": "CardioBrain is a clinical decision support tool. It does NOT:\n• Provide definitive diagnoses\n• Prescribe treatments or medications\n• Replace physical examination or comprehensive clinical assessment\n• Create patient data - always request missing information\n\nAlways use in conjunction with your clinical judgment and complete patient evaluation."
+  },
+  "clinical_actions_header": {
+    "message": "Clinical Quick Actions"
+  },
+  "clinical_action_reviewEcg_title": {
+    "message": "📋 Review ECG Report"
+  },
+  "clinical_action_reviewEcg_desc": {
+    "message": "Evaluate internal coherence of an ECG report (description vs. conclusion)"
+  },
+  "clinical_action_improveReport_title": {
+    "message": "✏️ Improve Report Wording"
+  },
+  "clinical_action_improveReport_desc": {
+    "message": "Rewrite report with clearer, standardized clinical language"
+  },
+  "clinical_action_checkContext_title": {
+    "message": "🔍 Check Report vs. Clinical Context"
+  },
+  "clinical_action_checkContext_desc": {
+    "message": "Verify if report aligns with clinical presentation"
+  },
+  "clinical_action_explainPatient_title": {
+    "message": "💬 Explain to Patient"
+  },
+  "clinical_action_explainPatient_desc": {
+    "message": "Translate technical report into patient-friendly language"
+  },
+  "clinical_action_compareExams_title": {
+    "message": "📊 Compare Serial Exams"
+  },
+  "clinical_action_compareExams_desc": {
+    "message": "Highlight clinically significant changes between exams"
+  },
+  "clinical_action_qualityCheck_title": {
+    "message": "✓ ECG Quality Checklist"
+  },
+  "clinical_action_qualityCheck_desc": {
+    "message": "Identify potential technical issues (artifacts, noise, electrode positioning)"
+  },
+  "clinical_action_riskAnalysis_title": {
+    "message": "⚠️ Risk Elements Analysis"
+  },
+  "clinical_action_riskAnalysis_desc": {
+    "message": "Highlight findings suggesting higher cardiovascular risk (requires further investigation)"
+  },
+  "clinical_action_reviewAutomatic_title": {
+    "message": "🤖 Review Automatic Report"
+  },
+  "clinical_action_reviewAutomatic_desc": {
+    "message": "Evaluate algorithm-generated report for over-interpretation"
+  },
+  "clinical_action_structureReport_title": {
+    "message": "📝 Structure Report"
+  },
+  "clinical_action_structureReport_desc": {
+    "message": "Reorganize free-text into standard sections (rhythm, axis, intervals, repolarization)"
+  },
+  "clinical_action_finalizeChecklist_title": {
+    "message": "❓ Pre-Finalization Checklist"
+  },
+  "clinical_action_finalizeChecklist_desc": {
+    "message": "Suggest questions to answer before signing the report"
   }
 }

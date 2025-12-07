@@ -1,11 +1,11 @@
 {
   "app_metadata_description": {
     "description": "Descrição da extensão",
-    "message": "Automatize tarefas da web com IA! NanoBrowser é uma extensão de código aberto para o navegador que permite extrair dados, preencher formulários e muito mais."
+    "message": "Assistente de IA para cardiologistas: interprete ECGs, revise laudos e apoie decisões clínicas. Construído sobre tecnologia de automação web inteligente."
   },
   "app_metadata_name": {
     "description": "Nome da extensão",
-    "message": "Nanobrowser: Agente Web de IA e Automação"
+    "message": "CardioBrain: Assistente de IA para Cardiologia"
   },
   "errors_unknown": {
     "message": "Ocorreu um erro desconhecido"
@@ -38,7 +38,7 @@
     "message": "Voltar para o chat"
   },
   "welcome_title": {
-    "message": "Bem-vindo ao Nanobrowser!"
+    "message": "Bem-vindo ao CardioBrain!"
   },
   "welcome_instruction": {
     "message": "Para começar, por favor, configure suas chaves de API na página de configurações."
@@ -167,7 +167,7 @@
     "message": "Ativar Entrada de Voz"
   },
   "permissions_microphone_description": {
-    "message": "O Nanobrowser precisa de acesso ao microfone para converter sua fala em texto."
+    "message": "O CardioBrain precisa de acesso ao microfone para converter sua fala em texto."
   },
   "permissions_microphone_grantButton": {
     "message": "Conceder Permissão ao Microfone"
@@ -966,5 +966,74 @@
         "example": "Opção não encontrada"
       }
     }
+  },
+  "clinical_disclaimer_title": {
+    "message": "⚕️ Aviso de Uso Clínico"
+  },
+  "clinical_disclaimer_text": {
+    "message": "CardioBrain é uma ferramenta de apoio à decisão clínica. NÃO:\n• Fornece diagnósticos definitivos\n• Prescreve tratamentos ou medicamentos\n• Substitui exame físico ou avaliação clínica completa\n• Inventa dados do paciente - sempre solicita informações ausentes\n\nSempre utilize em conjunto com seu julgamento clínico e avaliação completa do paciente."
+  },
+  "clinical_actions_header": {
+    "message": "Ações Clínicas Rápidas"
+  },
+  "clinical_action_reviewEcg_title": {
+    "message": "📋 Revisar Laudo de ECG"
+  },
+  "clinical_action_reviewEcg_desc": {
+    "message": "Avaliar coerência interna de um laudo de ECG (descrição vs. conclusão)"
+  },
+  "clinical_action_improveReport_title": {
+    "message": "✏️ Melhorar Redação do Laudo"
+  },
+  "clinical_action_improveReport_desc": {
+    "message": "Reescrever laudo com linguagem clínica mais clara e padronizada"
+  },
+  "clinical_action_checkContext_title": {
+    "message": "🔍 Checar Laudo vs. Contexto Clínico"
+  },
+  "clinical_action_checkContext_desc": {
+    "message": "Verificar se o laudo está compatível com a apresentação clínica"
+  },
+  "clinical_action_explainPatient_title": {
+    "message": "💬 Explicar para o Paciente"
+  },
+  "clinical_action_explainPatient_desc": {
+    "message": "Traduzir laudo técnico para linguagem acessível ao paciente"
+  },
+  "clinical_action_compareExams_title": {
+    "message": "📊 Comparar Exames Seriados"
+  },
+  "clinical_action_compareExams_desc": {
+    "message": "Destacar mudanças clinicamente significativas entre exames"
+  },
+  "clinical_action_qualityCheck_title": {
+    "message": "✓ Checklist de Qualidade do ECG"
+  },
+  "clinical_action_qualityCheck_desc": {
+    "message": "Identificar possíveis problemas técnicos (artefatos, ruído, posicionamento de eletrodos)"
+  },
+  "clinical_action_riskAnalysis_title": {
+    "message": "⚠️ Análise de Elementos de Risco"
+  },
+  "clinical_action_riskAnalysis_desc": {
+    "message": "Destacar achados que sugerem maior risco cardiovascular (requer investigação adicional)"
+  },
+  "clinical_action_reviewAutomatic_title": {
+    "message": "🤖 Revisar Laudo Automático"
+  },
+  "clinical_action_reviewAutomatic_desc": {
+    "message": "Avaliar laudo gerado por algoritmo quanto a interpretação excessiva"
+  },
+  "clinical_action_structureReport_title": {
+    "message": "📝 Estruturar Laudo"
+  },
+  "clinical_action_structureReport_desc": {
+    "message": "Reorganizar texto livre em seções padrão (ritmo, eixo, intervalos, repolarização)"
+  },
+  "clinical_action_finalizeChecklist_title": {
+    "message": "❓ Checklist Pré-Finalização"
+  },
+  "clinical_action_finalizeChecklist_desc": {
+    "message": "Sugerir perguntas a responder antes de assinar o laudo"
   }
 }

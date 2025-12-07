@@ -6,6 +6,7 @@ import { PiPlusBold } from 'react-icons/pi';
 import { GrHistory } from 'react-icons/gr';
 import { type Message, Actors, chatHistoryStore, agentModelStore, generalSettingsStore } from '@extension/storage';
 import favoritesStorage, { type FavoritePrompt } from '@extension/storage/lib/prompt/favorites';
+import clinicalActionsStorage, { type ClinicalAction } from '@extension/storage/lib/prompt/clinical-actions';
 import { t } from '@extension/i18n';
 import MessageList from './components/MessageList';
 import ChatInput from './components/ChatInput';
@@ -799,12 +800,27 @@ const SidePanel = () => {
     }
   };
 
-  // Load favorite prompts from storage
+  // Load favorite prompts and clinical actions from storage
   useEffect(() => {
     const loadFavorites = async () => {
       try {
+        // Load clinical actions first
+        const clinicalActions = await clinicalActionsStorage.getAllActions();
+
+        // Transform clinical actions into FavoritePrompt format for display
+        const clinicalPrompts: FavoritePrompt[] = clinicalActions
+          .filter(action => action.enabled)
+          .map((action, index) => ({
+            id: -(index + 1), // Use negative IDs to distinguish from user favorites
+            title: t(action.titleKey as any),
+            content: t(action.descKey as any), // Use description as placeholder content
+          }));
+
+        // Load user-created favorite prompts
         const prompts = await favoritesStorage.getAllPrompts();
-        setFavoritePrompts(prompts);
+
+        // Combine clinical actions (first) with user favorites (second)
+        setFavoritePrompts([...clinicalPrompts, ...prompts]);
       } catch (error) {
         console.error('Failed to load favorite prompts:', error);
       }
@@ -1144,6 +1160,19 @@ const SidePanel = () => {
                       />
                     </div>
                     <div className="flex-1 overflow-y-auto">
+                      {/* Clinical Disclaimer */}
+                      <div
+                        className={`mx-4 my-4 rounded-lg border-2 p-4 ${
+                          isDarkMode
+                            ? 'border-amber-600/50 bg-amber-900/20 text-amber-100'
+                            : 'border-amber-400 bg-amber-50 text-amber-900'
+                        }`}>
+                        <h3 className={`mb-2 text-sm font-bold ${isDarkMode ? 'text-amber-300' : 'text-amber-800'}`}>
+                          {t('clinical_disclaimer_title')}
+                        </h3>
+                        <p className="whitespace-pre-line text-xs leading-relaxed">{t('clinical_disclaimer_text')}</p>
+                      </div>
+
                       <BookmarkList
                         bookmarks={favoritePrompts}
                         onBookmarkSelect={handleBookmarkSelect}

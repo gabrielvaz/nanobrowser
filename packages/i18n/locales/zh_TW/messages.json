@@ -959,5 +959,74 @@
         "example": "Option not found"
       }
     }
+  },
+  "clinical_disclaimer_title": {
+    "message": "⚕️ 臨床使用免責聲明"
+  },
+  "clinical_disclaimer_text": {
+    "message": "CardioBrain 是臨床決策支援工具。它不會：\n• 提供明確診斷\n• 開立治療或藥物處方\n• 取代身體檢查或全面臨床評估\n• 創建患者數據 - 總是請求缺少的資訊\n\n請務必結合您的臨床判斷和完整的患者評估使用。"
+  },
+  "clinical_actions_header": {
+    "message": "臨床快捷操作"
+  },
+  "clinical_action_reviewEcg_title": {
+    "message": "📋 檢閱心電圖報告"
+  },
+  "clinical_action_reviewEcg_desc": {
+    "message": "評估心電圖報告的內部一致性（描述與結論）"
+  },
+  "clinical_action_improveReport_title": {
+    "message": "✏️ 改善報告措辭"
+  },
+  "clinical_action_improveReport_desc": {
+    "message": "用更清晰、標準化的臨床語言重寫報告"
+  },
+  "clinical_action_checkContext_title": {
+    "message": "🔍 檢查報告與臨床背景"
+  },
+  "clinical_action_checkContext_desc": {
+    "message": "驗證報告是否與臨床表現一致"
+  },
+  "clinical_action_explainPatient_title": {
+    "message": "💬 向患者解釋"
+  },
+  "clinical_action_explainPatient_desc": {
+    "message": "將技術報告翻譯成患者易懂的語言"
+  },
+  "clinical_action_compareExams_title": {
+    "message": "📊 比較系列檢查"
+  },
+  "clinical_action_compareExams_desc": {
+    "message": "突出顯示檢查之間臨床顯著的變化"
+  },
+  "clinical_action_qualityCheck_title": {
+    "message": "✓ 心電圖質量檢查清單"
+  },
+  "clinical_action_qualityCheck_desc": {
+    "message": "識別潛在技術問題（偽影、雜訊、電極位置）"
+  },
+  "clinical_action_riskAnalysis_title": {
+    "message": "⚠️ 風險元素分析"
+  },
+  "clinical_action_riskAnalysis_desc": {
+    "message": "突出顯示提示較高心血管風險的發現（需要進一步調查）"
+  },
+  "clinical_action_reviewAutomatic_title": {
+    "message": "🤖 檢閱自動報告"
+  },
+  "clinical_action_reviewAutomatic_desc": {
+    "message": "評估演算法產生的報告是否過度解讀"
+  },
+  "clinical_action_structureReport_title": {
+    "message": "📝 結構化報告"
+  },
+  "clinical_action_structureReport_desc": {
+    "message": "將自由文本重新組織成標準部分（節律、軸、間期、復極）"
+  },
+  "clinical_action_finalizeChecklist_title": {
+    "message": "❓ 完成前檢查清單"
+  },
+  "clinical_action_finalizeChecklist_desc": {
+    "message": "建議在簽署報告前要回答的問題"
   }
 }
